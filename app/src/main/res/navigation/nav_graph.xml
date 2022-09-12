@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/coordinates">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="ru.denis.yandexmap.ui.MapFragment"
+        tools:layout="@layout/map_fragment" />
+
+    <fragment
+        android:id="@+id/coordinates"
+        android:name="ru.denis.yandexmap.ui.CoordinatesFragment"
+        tools:layout="@layout/coordinates_fragment" >
+
+        <action android:id="@+id/action_coordinates_to_map"
+            app:destination="@id/map"/>
+    </fragment>
+</navigation>

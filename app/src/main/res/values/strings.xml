@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">YandexMap</string>
+
+    <string name="point_not_set">Точка не задана</string>
+    <string name="show_on_the_map">Показать на карте</string>
+    <string name="confirm_selected_point">Подтвердить выбранную точку</string>
+    <string name="addres_s_s">Address (\nlatitude: %s,\nlongitude: %s\n)</string>
+    <string name="back">Назад</string>
+</resources>
