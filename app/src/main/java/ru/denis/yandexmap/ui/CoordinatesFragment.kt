@@ -31,6 +31,10 @@ class CoordinatesFragment : Fragment() {
             findNavController().navigate(CoordinatesFragmentDirections.actionCoordinatesToMap())
         }
 
+        coordinatorObserver()
+    }
+
+    private fun coordinatorObserver() {
         viewModel.coordinates.observe(viewLifecycleOwner) {
             binding.coordinatesText.text = getString(
                 R.string.addres_s_s,
