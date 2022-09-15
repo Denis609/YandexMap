@@ -7,7 +7,6 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
-import ru.denis.yandexmap.R
 import ru.denis.yandexmap.databinding.CoordinatesFragmentBinding
 
 class CoordinatesFragment : Fragment() {
@@ -36,11 +35,7 @@ class CoordinatesFragment : Fragment() {
 
     private fun coordinatorObserver() {
         viewModel.coordinates.observe(viewLifecycleOwner) {
-            binding.coordinatesText.text = getString(
-                R.string.addres_s_s,
-                it.first.toString(),
-                it.second.toString()
-            )
+            binding.coordinatesText.text = it.toString()
         }
     }
 }

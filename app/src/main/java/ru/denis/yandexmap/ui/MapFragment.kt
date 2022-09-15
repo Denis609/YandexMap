@@ -74,7 +74,7 @@ class MapFragment : Fragment(), InputListener {
             binding.confirmSelectedPointFab.text = getString(R.string.confirm_selected_point)
             binding.map.map.mapObjects.clear()
             binding.map.map.mapObjects.addPlacemark(
-                Point(it.first, it.second),
+                Point(it.latitude, it.longitude),
                 ImageProvider.fromBitmap(
                     ContextCompat.getDrawable(
                         requireContext(),
